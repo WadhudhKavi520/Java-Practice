@@ -2,17 +2,17 @@ class Solution {
     public int[] createTargetArray(int[] nums, int[] index) {
         int n = nums.length;
 
-        ArrayList<Integer> target = new ArrayList<>();
+        ArrayList<Integer> tar = new ArrayList<>();
 
         for(int i=0; i<n; i++) {
-            target.add(index[i], nums[i]);
+            tar.add(index[i], nums[i]);
         }
         
-        int[] tar = new int[n];
+        int[] target = new int[n];
         for(int i=0; i<n; i++) {
-            tar[i] = target.get(i);
+            target[i] = tar.get(i);
         }
         
-        return tar;
+        return target;
     }
 }
