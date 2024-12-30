@@ -15,7 +15,7 @@ public class SwapValuesInAnArray {
         System.out.println("After swapping: " + Arrays.toString(arr));
     }
 
-    static void swap(int[] arr, int index1, int index2) {
+    public static void swap(int[] arr, int index1, int index2) {
         if(index1>=0 && index2<arr.length) {
             int temp = arr[index1];
             arr[index1] = arr[index2];
