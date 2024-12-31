@@ -3,9 +3,9 @@ class Solution {
         int original = x;        
         //String revNumber = "";//revNumber stands for reversed number.
         
-        if(x==0) {
-            return true;
-        }
+        // if(x==0) {
+        //     return true;
+        // }
         if(x<0) {
             return false;
         }
