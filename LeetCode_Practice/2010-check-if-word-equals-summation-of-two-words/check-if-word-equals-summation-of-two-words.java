@@ -4,22 +4,19 @@ class Solution {
 
         //finding numerical value of firstWord
         for(int i=0; i<firstWord.length(); i++) {
-            char ch = firstWord.charAt(i);
-            valFirstWord = valFirstWord + ch - 97;
+            valFirstWord += firstWord.charAt(i) - 97;
             valFirstWord = valFirstWord*10;
         }
 
         //finding numerical value of secondWord
         for(int i=0; i<secondWord.length(); i++) {
-            char ch = secondWord.charAt(i);
-            valSecondWord = valSecondWord + ch - 97;
+            valSecondWord += secondWord.charAt(i) - 97;
             valSecondWord = valSecondWord*10;
         }
 
         //finding numerical value of targetWord
         for(int i=0; i<targetWord.length(); i++) {
-            char ch = targetWord.charAt(i);
-            valTargetWord = valTargetWord + ch - 97;
+            valTargetWord += targetWord.charAt(i) - 97;
             valTargetWord = valTargetWord*10;
         }
 
@@ -27,6 +24,5 @@ class Solution {
             return true;
         }
         return false;
-
     }
 }
