@@ -37,6 +37,8 @@ public class CeilingOfNumber {
         System.out.println("Enter target element: ");
         int target = s.nextInt();
 
+        System.out.println("Finding the Ceiling of the given number...");
+
         binarySearch(nums, target);
     }
 }
